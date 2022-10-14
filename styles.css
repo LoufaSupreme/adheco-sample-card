@@ -1,0 +1,69 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    /* border: 2px solid yellow; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url('./Sample_Card-removebg-preview.png');
+}
+
+#sample-card {
+    width: 100%;
+    max-width: 100%;
+    transform: rotate(-90deg);
+    /* aspect-ratio: 1; */
+    z-index: 1;
+    /* object-fit: cover; */
+    /* border: 1px solid purple; */
+    /* height: 100%; */
+    visibility:hidden;
+}
+
+#slices {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* border: 1px solid red; */
+    z-index: 3;
+
+}
+
+.slice {
+    cursor: pointer;
+    pointer-events: bounding-box;
+    stroke: none;
+}
+
+.slice:hover {
+    fill: rgba(255,255,255,0.5);
+    stroke: rgba(81, 184, 243, 1);
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+    min-height: 150px;
+}
+
+rect {
+    stroke: none;
+}
