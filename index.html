@@ -16,11 +16,11 @@
         <svg id="slices" viewBox="0 0 1048 786" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="box">
             <path id="pe-foam-black" d="M183.5 121L212.5 107L292 295.5L285.5 298.5L278.5 301.5L272 306L265 310.5L260 316L253.5 322.5L110 179.5L122.5 166.5L137.5 153.5L160.5 136.5L183.5 121Z" stroke="#4FAAFF"/>
-            <rect id="Rectangle 1" x="0.5" y="0.5" width="1047" height="785" stroke="#27B5E2"/>
+            <rect id="Rectangle 1" x="0.5" y="0.5" stroke="#27B5E2"/>
             <path id="pe-foam-white" d="M222.5 101.5L213 106.5L292.5 295.5L302 292L309.5 290L317.5 288H327H340.5L338 82H323.5H309.5L292.5 83.5L278 85.5L265.5 88L252.5 91L237.5 96.5L222.5 101.5Z" stroke="#4FAAFF"/>
             <path id="mc-urethane" d="M721 79H706L702 291L707 290.5L713.5 291L720.5 292L727.5 293L736 295L743.5 297.5L750 301L834 108L831 106.5L825.5 104L815.5 100.5L805 96.5L796.5 94L786.5 91L775 88L765 86L753.5 83.5L743 82L731 80L721 79Z" stroke="#4FAAFF"/>
             </g>
-            </svg>
+        </svg>
         
         <img id="sample-card" src="Sample_Card-removebg-preview.png">
     </div>
@@ -36,6 +36,10 @@
                 name: 'PE Foam - White',
                 description: 'White PE Foam!'
             },
+            'pe-foam-black': {
+                name: 'PE Foam - Black',
+                description: 'Black PE Foam!'
+            },
             'mc-urethane': {
                 name: 'Microcellular Urethane',
                 description: 'MC Urethane!'
@@ -46,6 +50,7 @@
             const itemDetails = sliceDetails[this.id]
             title.innerText = itemDetails.name;
             descrip.innerText = itemDetails.description;
+            console.log(this)
         }
 
         function reset() {

@@ -1,1 +1,1 @@
-"# adheco-sample-card" 
+# adheco-sample-card

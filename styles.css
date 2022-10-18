@@ -4,6 +4,22 @@
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20vh;
+}
+
 img {
     margin: 0;
     padding: 0;
@@ -12,7 +28,7 @@ img {
 .container {
     position: relative;
     /* border: 2px solid yellow; */
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +62,7 @@ img {
 
 .slice {
     cursor: pointer;
-    pointer-events: bounding-box;
+    pointer-events:fill;
     stroke: none;
 }
 
@@ -55,15 +71,7 @@ img {
     stroke: rgba(81, 184, 243, 1);
 }
 
-.info-container {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 1rem;
-    flex-direction: column;
-    align-items: center;
-    min-height: 150px;
-}
-
 rect {
     stroke: none;
 }
+
